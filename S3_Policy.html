@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Playback Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .video-container {
+            background-color: #ffffff;
+            border: 1px solid #d3d3d3;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .video-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #0077c8;
+        }
+        video {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h1>Video Streaming Test</h1>
+        <video controls>
+            <source src="https://geoinfo-dmo-ryan2.s3.ap-northeast-1.amazonaws.com/Amazon_Web_Services.mp4" type="video/mp4">
+        </video>
+        <div class="footer">
+            © 2024 Ryan Chen | CHT Cloud Team
+        </div>
+    </div>
+</body>
+</html>
